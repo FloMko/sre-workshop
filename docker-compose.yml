@@ -1,0 +1,8 @@
+version: '2.2'
+services:
+  slides:
+    image: msoedov/hacker-slides
+    ports:
+      - 8090:8080
+    volumes:
+      - "$PWD/slides:/app/slides:rw"
